@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
+#centered-Description{
+  text-align: center;
+}
 .col-centered{
     float: none;
     margin: 0 auto;
