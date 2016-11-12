@@ -5,8 +5,57 @@
   font-weight: normal;
   font-style: normal;
 }
+#mapSection{
+  text-align: center;
+  margin-bottom: 30px;
+}
 #centered-Description{
   text-align: center;
+}
+#titleMain{
+  color:#121519;
+  text-shadow: 2px 0px #3f4959;
+}
+#linkColor .text-hover-black{
+  
+  color:black;
+  position:relative;
+  text-align: center;
+  bottom:150px;
+  margin:auto;
+  left:0px;
+  visibility:hidden;
+}
+
+#linkColor .text-hover-white{
+  color:white;
+  position:relative;
+  text-align: center;
+  bottom:150px;
+  margin:auto;
+  left:0px;
+  visibility:hidden;
+}
+
+#linkColor{
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-right:40px;
+}
+#linkColor:hover{
+  -webkit-filter: grayscale(100%);  /*Chrome, Safari, Opera */
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  
+}
+#linkColor:hover .text-hover-black{
+  visibility: visible;
+}
+#linkColor:hover .text-hover-white{
+  visibility: visible;
 }
 .col-centered{
     float: none;
@@ -25,9 +74,7 @@ body.fh5co-overflow {
   width: 100%;
 }
 
-#linkColor{
-  color:black;
-}
+
 a {
   color: #69c2c8;
   -webkit-transition: 0.5s;
@@ -1189,6 +1236,80 @@ p {
   height: 100%;
   z-index: 9999;
   background: url(../images/Preloader_2.gif) center no-repeat #fff;
+}
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 55%;
+  height: 81%;
+  left: 22%;
+  top: 10%;
+  border-radius: 80%;
+  border: 2px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(50%,50%,0);
+  transform: translate3d(50%,50%,0);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
 }
 
 /*# sourceMappingURL=style.css.map */
