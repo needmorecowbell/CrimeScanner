@@ -1,8 +1,4 @@
-PSU201604781 ;  11/12/2016 2:54 AM ;  11/12/2016 2:54 AM ;  Assisted the ambulance with a medical emergency ;  Health and Safety/RFA-Request for Assistance ;  Pinchot Hall ;  Closed  ;
-  PSU201604780 ;  11/12/2016 2:16 AM to 3:29 AM ;  11/12/2016 2:53 AM ;  Assisted a student with a personal matter ;  Health and Safety/RFA-Request for Assistance ;  Simmons Hall ;  Closed  ;
-  PSU201604778 ;  11/12/2016 1:20 AM to 1:58 AM ;  11/12/2016 1:58 AM ;  Student reported a concern for another student ;  Health and Safety ;  Simmons Hall ;  Open  ;
-  PSU201604777 ;  11/12/2016 1:37 AM ;  11/12/2016 1:37 AM ;  Employee reported suspicious activity ;  Suspicious Activity - Persons ;  Arl Science Park Bldg ;  Closed  ;
   PSU201604776 ;  11/12/2016 1:31 AM ;  11/12/2016 1:31 AM ;  Resident Assistant reported the odor of marijuana, origin not located ;  Possession of Small Amount of Marijuana ;  Bigler Hall ;  Open  ;
-  PSU201604775 ;  11/12/2016 1:16 AM to 2:14 AM ;  11/12/2016 1:30 AM ;  Underage visitor observed highly intoxicated and transported to the hospital ;  Pur,Cons,Poss, Trans Intox Bev/Health and Safety/RFA-Request for Assistance ;  Hastings Hall ;  Open  ;
-  PSU201604773 ;  11/12/2016 12:29 AM to 1:04 AM ;  11/12/2016 12:31 AM ;  Underage student observed highly intoxicated ;  Pur,Cons,Poss, Trans Intox Bev/RFA-Request for Assistance/Health and Safety ;  Simmons Hall ;  Open  ;
-  PSU201604772 ;  11/12/2016 12:15 AM to 12:35 AM ;  11/12/2016 12:20 AM ;  Student observed highly intoxicated and transported to the hospital ;  Pur,Cons,Poss, Trans Intox Bev/Health and Safety/RFA-Request for Assistance ;  Jordan Hall ;  Open  ;
+  PSU201604778 ;  11/12/2016 1:20 AM to 1:58 AM ;  11/12/2016 1:58 AM ;  Student reported a concern for another student ;  Health and Safety ;  Simmons Hall ;  Open  ;
+  PSU201604781 ;  11/12/2016 2:54 AM ;  11/12/2016 2:54 AM ;  Assisted the ambulance with a medical emergency ;  Health and Safety/RFA-Request for Assistance ;  Pinchot Hall ;  Closed  ;
+  PSU201604780 ;  11/12/2016 2:16 AM to 3:29 AM ;  11/12/2016 2:53 AM ;  Assisted a student with a personal matter ;  Health and Safety/RFA-Request for Assistance ;  Simmons Hall ;  Closed  ;

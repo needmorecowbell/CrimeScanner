@@ -1,41 +1,55 @@
 function addMarkers(map){
     var info = new Array();
     var markers = new Array();
+    var color = new Array();
     var i=0;
-        $.get('log1.txt', {}, function (txt){
+        $.get('log.txt', {}, function (txt){
           var lines = txt.split('\n');
-          
-          var i;
-          for (i=0; i<lines.length-1; i++ ){
+ 
+          for (i=0; i<lines.length; i++ ){
+              
               var data = lines[i].split(";");
-              console.log(data[5]);
-              var color;
-              if (strcmp(data[6], "  Closed  ")==0){
-                  color = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+              
+              //"incident#","occurred","reported","nature","offenses","location","disposition"
+              
+              /*if (data[6].includes("Closed")){
+               color[i] = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
               }
               else{
-                  color = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-              }
+                color[i] = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+              }*/
               var geocoder = new google.maps.Geocoder();
+              
+              
               var address = data[5] + ", University Park, PA";
+              
               geocoder.geocode({'address': address}, function(results, status) {
-                console.log(results[0].geometry.location);
-          if (status === 'OK') {
-              markers[i] = new google.maps.Marker({
-                position: results[0].geometry.location,
-                map: this.map,
-                icon: color
-             });
-          }
+                // console.log(results[0].geometry.location);
+                
+                if (status === 'OK') {
+                    markers[i] = new google.maps.Marker({
+                      position: results[0].geometry.location,
+                      map: this.map,
+                      icon: '//maps.google.com/mapfiles/ms/icons/red-dot.png',
+                      
+                    });
+                    
+                    console.log(i);
+                    
+                  //if (data[6].includes("Closed")){
+                  //   markers[i].setIcon('//maps.google.com/mapfiles/ms/icons/green-dot.png');
+                  // }
+                  // else{
+                  //   markers[i].setIcon('//maps.google.com/mapfiles/ms/icons/red-dot.png');
+                  // }
+                }
               });
+              
+                  // console.log(markers[i]);
+
+        
               }
           });
         
         
-}
-
-function strcmp(a, b) {
-    if (a.toString() < b.toString()) return -1;
-    if (a.toString() > b.toString()) return 1;
-    return 0;
 }
