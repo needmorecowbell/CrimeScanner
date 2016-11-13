@@ -5,9 +5,10 @@
 <!--<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>-->
 <!--<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>-->
 <!--<script type="text/javascript" src="js/markers.js"></script>-->
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.css' rel='stylesheet' />
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK1gl7SteJiWHeCwCJNznAjG3Ci6Orozo&callback=initMap" async defer></script>
+<!--<script src='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.js'></script>-->
+<!--<link href='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.css' rel='stylesheet' />-->
+
 </head>
 
 <!--<body><div id="map"></div>-->
@@ -17,17 +18,24 @@
     <div id='map' style='width: 800px; height: 800px;'></div>
     
     <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibmVlZG1vcmVjb3diZWxsIiwiYSI6ImNpdG5yczZ4czAyNDQyenNidno2ODRuM2MifQ.HoPc2pAFQIrmx2iMah8tTQ';
+    //google api key AIzaSyAK1gl7SteJiWHeCwCJNznAjG3Ci6Orozo
+   // mapboxgl.accessToken = 'pk.eyJ1IjoibmVlZG1vcmVjb3diZWxsIiwiYSI6ImNpdG5yczZ4czAyNDQyenNidno2ODRuM2MifQ.HoPc2pAFQIrmx2iMah8tTQ';
     
-    var map = new mapboxgl.Map({
+   /* var map = new mapboxgl.Map({
       container: 'map',
       center: [ -77.8528,40.7887],
       zoom: 13,
-      //style: 'mapbox://styles/mapbox/streets-v9',
-      style: 'mapbox://styles/mapbox/dark-v9',
+      style: 'mapbox://styles/mapbox/streets-v9',
+      //style: 'mapbox://styles/mapbox/dark-v9',
       hash: true,
 
-    });
+    });*/
+    var MYMAP;
+    function initMap() {
+        MYMAP = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -77.8528, lng: 40.7887},
+          zoom: 6
+        });}
 
     </script>
     
